@@ -150,7 +150,7 @@ const socket = io({transports: ['websocket']});
 
 socket.on('broadcast', function (data) {
   render(data);
-  document.getElementById(data.chatId).getElementsByTagName('DIV')[1].innerHTML = data.message;
+  //document.getElementById(data.chatId).getElementsByTagName('DIV')[5].innerHTML = data.message;
 });
 
 socket.on('clear1', function () {
